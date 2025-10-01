@@ -1,0 +1,330 @@
+/* Grund Style für alles */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-h: 100px; /* Höhe deiner festen Navigation */
+}
+
+html {
+  scroll-behavior: smooth;           /* weiches Scrollen, optional */
+  scroll-padding-top: var(--nav-h);  /* Platz für die Navi reservieren */
+}
+
+/*Styles für den ganzen Body */
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #014421;
+  background-color: #e6e2d7;
+  display: flex;
+  flex-flow: column;
+}
+
+/*Style für Navigations Bar*/
+
+header {
+  display: flex;
+  justify-content: center;
+  color: #FAFAFA;
+  background-color: #222;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.navigation {
+  position: fixed;
+  background-color: #222;
+  border-radius: 0px 0px 8px 8px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-right: 90px;
+  padding-left: 90px;
+}
+
+#navigation-links {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+#navigation-links a {
+  color: #FAFAFA;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#navigation-links a:hover {
+  color: #129b54;
+  transform: scale(1.03);
+}
+
+/* Style für Willkommenspart */
+
+.welcome {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #FAFAFA;
+  background-color: #014421;
+  padding: 30px;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  font-size: large;
+}
+
+#welcome {
+  border-radius: 5px;
+  margin-right: 500px;
+  margin-left: 500px;
+}
+
+#about {
+  text-align: center;/*
+  background-color: #014421;
+  border-radius: 5px;
+  padding: 20px;
+  color: #FAFAFA;*/
+  max-height: 200px;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 150px;
+  font-weight: 400;
+  font-size: large;
+}
+
+#about p {
+  padding-top: 50px;
+}
+
+#skills {
+  text-align: center;
+  margin: auto;
+  margin-top: 150px;
+  font-size: large;
+}
+
+.skill-set {
+  padding-top: 50px;
+}
+
+.skill {
+  display: inline-flex;
+  border: 3px solid #006330;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease; 
+}
+
+.skill:hover {
+  color: white;
+  background-color: #129b54;
+  transform: scale(1.05);
+}
+
+#goals {
+  text-align: center;
+  margin: auto;
+  margin-top: 150px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.goal-list {
+  padding-top: 50px;
+}
+
+.goal {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #006330;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease; 
+}
+
+.goal:hover {
+  color: white;
+  background-color: #129b54;
+  transform: scale(1.05);
+}
+
+#erfolge {
+  text-align: center;
+  margin: auto;
+  margin-top: 150px;
+  font-size: large;
+}
+
+.erfolgListe {
+  font-size: large;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+
+.erfolg {
+  display: inline;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Kontakt */
+#contact {
+  scroll-margin-top: var(--nav-h); /* falls du Lösung 2 nutzt; schadet nie */
+  padding-bottom: 120px;
+}
+
+.contact {
+  text-align: center;
+  margin: auto;
+  margin-top: 150px;
+  font-size: large;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.contact h2 {
+  margin-bottom: 24px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* links Karten, rechts Formular */
+  gap: 32px;
+  padding-top: 50px;
+}
+
+/* Karten */
+.contact-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 2px solid #00633020;
+  border-radius: 10px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.contact-card .icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.contact-card h3 {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  color: #014421;
+}
+
+.contact-card p {
+  margin: 0;
+  opacity: .9;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  border-color: #129b54;
+}
+
+/* Formular */
+.contact-form {
+  background: #ffffff;
+  border: 2px solid #00633020;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+}
+
+.contact-form .field {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #014421;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 2px solid #00633040;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font: inherit;
+  background: #fafafa;
+  transition: border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #129b54;
+  box-shadow: 0 0 0 3px rgba(18,155,84,.15);
+  background: #fff;
+}
+
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+  border-color: #c73a3a80;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #129b54;
+  color: #FAFAFA;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.12);
+  background: #0f8a4a;
+}
+
+.form-hint {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Responsiv */
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .contact-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .contact-cards {
+    grid-template-columns: 1fr;
+  }
+}

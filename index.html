@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nico Winter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigations Bar -->
+  
+  <header>
+  <div class="navigation"><b>Mein Portfolio</b>
+    <ul id="navigation-links">
+      <li><a href="#welcome">Willkommen</a></li>
+      <li><a href="#about">Über mich</a></li>
+      <li><a href="#skills">Meine Fähigkeiten</a></li>
+      <li><a href="#goals">Meine Ziele</a></li>
+      <li><a href="#erfolge">Bisherige Erfolge</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </div>
+  </header>
+
+  <!-- Willkommenspart -->
+
+  <section class="welcome">
+  <div id="welcome">
+    <h1>Willkommen zu meinem Portfolio!🙋‍♂️​</h1>
+    <p>🚀Das ist meine erste öffentliche Website.🚀</p>
+  </div>
+  </section>
+
+  <!-- Informationen und kurzes über mich -->
+
+  <div id="about">
+    <h2><u>Über mich</u></h2>
+    <p>Hallo!🙋‍♂️ ich bin <b>Nico</b> und ich bin 22 Jahre alt. Ich habe am 01.09.25 meine <b>Ausbildung zum Fachinformatiker</b>
+      für <b>Anwendungsentwicklung</b> angefangen. Ich finde Technik seit meiner Kindheit schon sehr interessant und träumte
+      immer davon irgendwann mal in diesem Bereich zu arbeiten.</p>
+  </div>
+
+
+  <!-- Fähigkeiten liste ?-->
+
+  <section id="skills" class="skills">
+    <h2><u>Fähigkeiten</u></h2>
+    <div class="skill-set">
+      <div class="skill">Teamfähigkeit🫂</div>
+      <div class="skill">Kommunikativ🗣️</div>
+      <div class="skill">Ergeizig🏆</div>
+      <div class="skill">Fließend Deutsch</div><br>
+      <div class="skill">Fließend Englisch</div>
+      <div class="skill">Anfängerstufe HTML💻</div>
+      <div class="skill">Anfängerstufe CSS💻</div>
+      <div class="skill">Anfängerstufe javaScript💻</div>
+      <div class="skill">Anfängerstufe SQL💻</div>
+    </div>
+  </section>
+
+  <!-- Ziele in Boxen nach unten sortiert aufzählen -->
+
+  <section id="goals" class="goals">
+    <h2><u>Meine Ziele bis 2026</u></h2>
+    <div class="goal-list">
+      <div class="goal">Ich werde dieses Portfolio fertigstellen.</div>
+      <div class="goal">Ich werde kleine Projekte wie eine Digitale Uhr, ein Zufalls-Generator und eine to- Do Liste probieren zu erstellen.</div>
+      <div class="goal">Ich werde mir Wissen in Anwendungen mit Sharepoint aneignen.</div>
+      <div class="goal">Ich werde versuchen erstellen der Intranet-Navigation mitzuarbeiten.</div>
+      <div class="goal">Ich werde Python lernen um mich dann mit dem BackEnd- Development auseinander zu setzen.</div>
+    </div>
+  </section>
+
+  <!-- Meine bisherigen Erfolge in Blöcken mit Bildern -->
+
+  <section id="erfolge" class="erfolge">
+    <h2><u>Meine bisherigen Erfolge</u></h2>
+    <div class="erfolgListe">
+      <div class="erfolg"><u>HTML Introduction Kurs</u><br>
+      <img src="HTML Zertifikat.png" alt="HTML Zertifikat" width="350px"></div>
+      <div class="erfolg"><u>CSS Introduction Kurs</u><br>
+      <img src="CSS Zertifikat.png" alt="CSS Zertifikat" width="350px"></div>
+      <div class="erfolg"><u>JavaScript Introduction Kurs</u><br>
+      <img src="JavaScript Zertifikat.png" alt="JavaScript Zertifikat" width="350px"></div>
+      <div class="erfolg"><u>SQL Introduction Kurs</u><br>
+      <img src="SQL Zertifikat.jpg" alt="SQL Zertifikat" width="350px"></div>
+      <div class="erfolg"><u>Web-Entwicklungs Kurs</u><br>
+      <img src="Web-Entwicklung Zertifikat.jpg" alt="Web-Entwicklungs Zertifikat" width="350px"></div>
+    </div>
+  </section>
+
+  <!-- Kontaktinformationen -->
+
+<!-- Kontakt -->
+<section id="contact" class="contact">
+  <h2><u>Kontakt</u></h2>
+
+  <div class="contact-grid">
+    <!-- Kontakt-Karten -->
+    <div class="contact-cards">
+      <a class="contact-card" href="mailto:nico@camdere.de">
+        <div class="icon">📧</div>
+        <div>
+          <h3>E-Mail</h3>
+          <p>nico@camdere.de</p>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://www.linkedin.com/in/nicowinter159" target="_blank" rel="noopener">
+        <div class="icon">💼</div>
+        <div>
+          <h3>LinkedIn</h3>
+          <p>@nicowinter</p>
+        </div>
+      </a>
+
+      <a class="contact-card" href="https://github.com/nicownt159" target="_blank" rel="noopener">
+        <div class="icon">💻</div>
+        <div>
+          <h3>GitHub</h3>
+          <p>@nicownt159</p>
+        </div>
+      </a>
+
+      <div class="contact-card">
+        <div class="icon">📍</div>
+        <div>
+          <h3>Standort</h3>
+          <p>DE • Baden-Württemberg (Ulm)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kontakt-Formular -->
+    <form class="contact-form" action="mailto:nico@camdere.de" method="post" enctype="text/plain">
+      <div class="field">
+        <label for="name">Name*</label>
+        <input id="name" name="Name" type="text" placeholder="Dein Name" required />
+      </div>
+
+      <div class="field">
+        <label for="email">E-Mail*</label>
+        <input id="email" name="Email" type="email" placeholder="deine@email.de" required />
+      </div>
+
+      <div class="field">
+        <label for="message">Nachricht*</label>
+        <textarea id="message" name="Nachricht" rows="6" placeholder="Worum geht's?" required></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Senden</button>
+      <p class="form-hint">* Pflichtfelder – Alternativ per E-Mail schreiben.</p>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>
